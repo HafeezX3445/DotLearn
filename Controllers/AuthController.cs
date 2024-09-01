@@ -24,6 +24,9 @@ namespace DotLearn.Controllers
         {
             try
             {
+                if (userObj == null)
+                    return BadRequest(userObj);
+
                 // Step 1: Validate the username/password
                 var validUser = await _User.ValidateUser(userObj.UserName, userObj.Password);
 
@@ -54,7 +57,7 @@ namespace DotLearn.Controllers
         }
 
 
-        [Authorize(Roles ="Admin")]
+        [Authorize(Roles = "Admin")]
         [HttpGet("RBAC")]
         public IActionResult Rbac()
         {
