@@ -1,5 +1,6 @@
 ﻿using DotLearn.DTO;
 using DotLearn.Interfaces;
+using DotLearn.Repository;
 using DotLearn.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
