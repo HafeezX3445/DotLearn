@@ -66,6 +66,5 @@ namespace DotLearn.Controllers
             // Doc @ https://weblog.west-wind.com/posts/2021/Mar/09/Role-based-JWT-Tokens-in-ASPNET-Core
             return Ok();
         }
-
     }
 }
